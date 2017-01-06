@@ -6,70 +6,8 @@
     <description>Recent content on moo&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kammhoff.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Gmail &#43; Custom Domain</title>
-      <link>https://kammhoff.com/gmaildomain/</link>
-      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kammhoff.com/gmaildomain/</guid>
-      <description>
-
-&lt;h1 id=&#34;gmail-custom-domain&#34;&gt;Gmail + Custom Domain&lt;/h1&gt;
-
-&lt;p&gt;Of course you could go and pay for Google Apps, but that&amp;rsquo;s about 5€ a month for using a custom email address, why do this if you can literally get the same result for free?
-So here we go!&lt;/p&gt;
-
-&lt;h2 id=&#34;step-1-purchase-the-domain&#34;&gt;Step 1: Purchase the Domain!&lt;/h2&gt;
-
-&lt;p&gt;Just head over to the service of your choice (in my case namecheap.com) and purchase the domain of your choice. Since this is my first time doing this, I went with kammhoff.com&lt;/p&gt;
-
-&lt;h2 id=&#34;step-2-receiving-mail&#34;&gt;Step 2: Receiving Mail&lt;/h2&gt;
-
-&lt;p&gt;Receiving mail is quite simple, just head into your domain settings and add email forwarding for your desired email, in this case blog@kammhoff.com
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;image of settings&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;step-3-sending-mail&#34;&gt;Step 3: Sending Mail&lt;/h2&gt;
-
-&lt;p&gt;There are multiple services providing a SMTP relay, usually used for newsletters and similar. They often offer free tiers up to a couple thousand emails a day/month, so there won&amp;rsquo;t be any additional cost for you!&lt;/p&gt;
-
-&lt;p&gt;A very popular choice is &lt;a href=&#34;mailgun.com&#34;&gt;mailgun.com&lt;/a&gt;. Due to its popularity many people use it for spamming though, which puts some of the IPs on blacklists. This results in your mail possibly getting filtered or not sent, something which you obviously want to avoid. In fact, according to this &lt;a href=&#34;https://www.bugmuncher.com/blog/moving-away-from-mandrill/&#34;&gt;post&lt;/a&gt;, which is referencing a statistic from &lt;a href=&#34;inboxtrail.com&#34;&gt;inboxtrail&lt;/a&gt;, only 61.25% of mail sent through mailgun is delivered.
-This is quite a terrible stat, so I went on to look for a different solution.&lt;/p&gt;
-
-&lt;p&gt;The first alternative I found was &lt;a href=&#34;zoho.com&#34;&gt;zoho&lt;/a&gt;. But it just felt like it was too much, it was a full mail client, CRM, and so much more. I was perfectly happy with Gmail, which ended up making me consider &lt;a href=&#34;sparkpost.com&#34;&gt;sparkpost.com&lt;/a&gt;.
-I couldn&amp;rsquo;t find anything wrong with it, so I decided to go for it and set up my free account.
-Being in the free tier I am able to send 10,000 emails/DAY, a number I will never reach with my intended purposes.&lt;/p&gt;
-
-&lt;p&gt;During account creation you will be asked to add a domain. Just enter the previously purchased domain, and continue.
-Afterwards you need to verify ownership of the domain, by either adding a SPF/DKIM record to your DNS or verifying through email. I ended up doing all of these things. Just to be sure, you know.&lt;/p&gt;
-
-&lt;p&gt;For the email verification method, add one of the displayed addresses to the email forwarding in your domain settings. Send the mail, click the link, done! If you want to, you can delete the forwarding address after.&lt;/p&gt;
-
-&lt;p&gt;To add the DNS records just head over to your domain settings, and add the records displayed on sparkposts verification site.
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;image of verification process&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;It might take a few minutes to complete, but we can use this time to setup the gmail part of this.&lt;/p&gt;
-
-&lt;p&gt;Head over to your gmail account, go to Settings-&amp;gt;Accounts and Import.
-Click on &amp;lsquo;Add another email address&amp;rsquo; on the &amp;lsquo;Send mail as&amp;rsquo; section.
-Go back to the sparkpost dashboard, and click on &amp;lsquo;Setup SMTP Relay&amp;rsquo;.&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;image of smtp relay location&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Now enter the sparkpost information into the gmail form, accept and confirm the received email. You should probably also write down the password somewhere.
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;imageS of gmail form&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;After adding the email address in your Gmail settings, you can go ahead and tick &amp;lsquo;Reply from the same address the message was sent to&amp;rsquo;.&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;image of gmail settings&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Now the only thing left is waiting for the DNS records to update, and the sparkposts domain verification to succeed! Once that is done, you will be able to use gmail for receiving/sending mail through your custom email address!&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;image of sending mail through new address&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>My descend into /r/MechanicalKeyboards - or: The WhiteFox</title>
@@ -265,7 +203,7 @@ Followed by probably buying a HHKB.&lt;/p&gt;
       <pubDate>Sat, 22 Aug 2015 06:42:21 -0700</pubDate>
       
       <guid>https://kammhoff.com/about/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hi!&lt;/strong&gt; I&amp;rsquo;m Niklas &amp;lsquo;rammo&amp;rsquo; Kammhoff, a 20 year old Software Engineering student at the University of Stuttgart.&lt;br /&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Hi!&lt;/strong&gt; I&amp;rsquo;m Niklas &amp;lsquo;rammo&amp;rsquo; Kammhoff, a 20 year old Software Engineering student at the University of Stuttgart, Germany.
 I&amp;rsquo;ll be using this blog to talk about things that interest me, as well as day to day events in life.&lt;/p&gt;
 
 &lt;p&gt;This includes my personal projects, programming topics, movies, general technology and more.&lt;/p&gt;
