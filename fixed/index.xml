@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fixed on moo&#39;s</title>
+    <link>https://kammhoff.com/fixed/index.xml</link>
+    <description>Recent content in Fixed on moo&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 22 Aug 2015 06:42:21 -0700</lastBuildDate>
+    <atom:link href="https://kammhoff.com/fixed/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>https://kammhoff.com/about/</link>
+      <pubDate>Sat, 22 Aug 2015 06:42:21 -0700</pubDate>
+      
+      <guid>https://kammhoff.com/about/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hi!&lt;/strong&gt; I&amp;rsquo;m Niklas &amp;lsquo;rammo&amp;rsquo; Kammhoff, a 20 year old Software Engineering student at the University of Stuttgart.&lt;br /&gt;
+I&amp;rsquo;ll be using this blog to talk about things that interest me, as well as day to day events in life.&lt;/p&gt;
+
+&lt;p&gt;This includes my personal projects, programming topics, movies, general technology and more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://kammhoff.com/projects/</link>
+      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
+      
+      <guid>https://kammhoff.com/projects/</guid>
+      <description>&lt;p&gt;Nothing yet :(&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kammhoff.com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kammhoff.com/</guid>
+      <description>&lt;p&gt;This blog does not share personal information with third parties nor do we store any information about your visit to this blog other than to analyze and optimize your content and reading experience through the use of cookies.&lt;/p&gt;
+
+&lt;p&gt;You can turn off the use of cookies at anytime by changing your specific browser settings.&lt;/p&gt;
+
+&lt;p&gt;We are not responsible for republished content from this blog on other blogs or websites without our permission.&lt;/p&gt;
+
+&lt;p&gt;This privacy policy is subject to change without notice and was last updated on January, 06, 2017. If you have any questions feel free to contact me directly here: niklas@kammhoff.com.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
