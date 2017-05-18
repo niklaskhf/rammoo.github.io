@@ -1,0 +1,107 @@
+int windowX = 1024;
+int windowY = 768;
+int circleX, circleY;  // Position of circle button
+int circleSize;   // Diameter of circle
+color circleColor, baseColor;
+boolean circleOver = false;
+
+HashMap<Integer, ArrayList<Integer>> circleTracking = new HashMap<Integer, Integer>();
+
+int[] sizes = new int[] {5,10,20,30,50};
+
+void setup() {
+  size(windowX,windowY);
+  surface.setResizable(false);
+  
+  baseColor = color(167);
+  circleColor = color(7,183,58);
+  
+  
+  for(int i : sizes) {
+    circleTracking.put(i, new ArrayList<Integer>());
+  }
+}
+
+
+void draw() {
+  update(mouseX, mouseY);
+  background(currentColor);
+  
+  if (rectOver) {
+    fill(rectHighlight);
+  } else {
+    fill(rectColor);
+  }
+  stroke(255);
+  
+  if (circleOver) {
+    fill(circleHighlight);
+  } else {
+    fill(circleColor);
+  }
+  stroke(0);
+  ellipse(circleX, circleY, circleSize, circleSize);
+}
+
+void update(int x, int y) {
+  if ( overCircle(circleX, circleY, circleSize) ) {
+    circleOver = true;
+  } else {
+    circleOver = false;
+  }
+}
+
+void mousePressed() {
+  if (circleOver) {
+    currentColor = circleColor;
+  }
+}
+
+
+boolean overCircle(int x, int y, int diameter) {
+  float disX = x - mouseX;
+  float disY = y - mouseY;
+  if (sqrt(sq(disX) + sq(disY)) < diameter/2 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+void drawCircle() {
+  pickRandomSize();
+  pickRandomCircleX();
+  pickRandomCircleY();
+}
+
+void pickRandomSize() {
+  int rand = (int) random(5);
+  while (circleTracking.get(sizes[rand]).size() >= 20) {
+    rand = (int) random(5);
+  }
+  circleSize = sizes[rand];
+}
+
+void pickRandomCircleCoordinates() {
+  int circleNewX;
+  int circleNewY:
+  if (circleX == null || circleY == null) {
+    circleX = random((int) (0 + (circleSize / 2)), (int) (windowX - (circleSize / 2));
+    circleY = random((int) (0 + (circleSize / 2)), (int) (windowY - (circleSize / 2))
+  } else {
+    while () {
+    }
+  }
+}
+
+boolean overlap() {
+  if () {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+int calcDistance() {
+  return Math.sqrt((
+}
