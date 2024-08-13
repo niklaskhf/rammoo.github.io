@@ -1,35 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kammhoff.com/about/</loc>
-    <lastmod>2015-08-22T06:42:21-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kammhoff.com/privacy/</loc>
-    <lastmod>2015-08-22T06:42:21-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kammhoff.com/projects/</loc>
-    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
-  </url>
-  
-  <url>
+    <loc>https://kammhoff.com/categories/</loc>
+  </url><url>
     <loc>https://kammhoff.com/</loc>
+  </url><url>
+    <loc>https://kammhoff.com/tags/</loc>
   </url>
-  
-  <url>
-    <loc>https://kammhoff.com/fixed/</loc>
-    <lastmod>2015-08-22T06:42:21-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kammhoff.com/</loc>
-    <lastmod>2015-08-22T06:42:21-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
 </urlset>
